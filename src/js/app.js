@@ -1,22 +1,25 @@
 function destructuring(character) {
   const result = [];
-  const { special } = character;
-
-  if (!special) {
+  if (!character.special) {
     return result;
   }
+  const {
+    special: [
+      {
+        id,
+        name,
+        icon,
+        description = 'Описание недоступно',
+      },
+    ],
+  } = character;
+  result.push({
+    id,
+    name,
+    icon,
+    description,
+  });
 
-  for (const key of special) {
-    if (!key.description) {
-      key.description = 'Описание недоступно';
-    }
-    result.push({
-      id: key.id,
-      name: key.name,
-      icon: key.icon,
-      description: key.description,
-    });
-  }
   return result;
 }
 
