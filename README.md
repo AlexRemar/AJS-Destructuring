@@ -12,14 +12,14 @@
 
 Вам необходимо для панели выбора варианта атаки вытащить id, иконку и описание из объекта:
 
-const character = {
-  name: 'Лучник',
-  type: 'Bowman',
-  health: 50,
-  level: 3,
-  attack: 40,
-  defence: 10,
-  special: [
+   const character = {
+     name: 'Лучник',
+     type: 'Bowman',
+     health: 50,
+     level: 3,
+     attack: 40,
+     defence: 10,
+     special: [
     {
          id: 8,
          name: 'Двойной выстрел',
@@ -27,10 +27,10 @@ const character = {
          description: 'Двойной выстрел наносит двойной урон'
     }, 
     {
-      id: 9,
-      name: 'Нокаутирующий удар',
-      icon: 'http://...'
-      // <- обратите внимание, описание "засекречено"
+         id: 9,
+         name: 'Нокаутирующий удар',
+         icon: 'http://...'
+         // <- обратите внимание, описание "засекречено"
     }
   ]	
 }
