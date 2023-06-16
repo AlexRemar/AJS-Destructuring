@@ -21,10 +21,10 @@ const character = {
   defence: 10,
   special: [
     {
-      id: 8,
-      name: 'Двойной выстрел',
-      icon: 'http://...',
-      description: 'Двойной выстрел наносит двойной урон'
+         id: 8,
+         name: 'Двойной выстрел',
+         icon: 'http://...',
+         description: 'Двойной выстрел наносит двойной урон'
     }, 
     {
       id: 9,
